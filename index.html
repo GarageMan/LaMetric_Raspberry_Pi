@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Lametric Dashboard</title>
+
+  <!-- Basis-Styles -->
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/dashboard.css" />
+  <link rel="stylesheet" href="styles/effects.css" />
+
+  <!-- Font (lokal) -->
+  <style>
+	@font-face {
+	  font-family: "Lametric";
+	  src: url("assets/fonts/lametric.ttf") format("truetype");
+	  font-display: swap;
+	}
+  </style>
+</head>
+
+<body>
+  <div id="stage">
+	  <div id="container">
+		<img alt="Mondphase" id="moonphase" />
+		<div id="date">---</div>
+		<div id="clock">--:--:--</div>
+
+		<!-- Wetter- und Geburtstag-Icons -->
+		<img id="weatherIcon" src="assets/bilder/day_sunny.gif" alt="Wetter" />
+		<img id="birthdayIcon" src="assets/bilder/birthday_cake.gif" alt="Geburtstag" />
+
+		<!-- Rotierender Textbereich (Temp/Druck/Wind/Feiertage/Geburtstage) -->
+		<div id="weatherText"></div>
+	  </div>
+  </div>
+ 
+  <!-- Einstieg: ES-Module -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

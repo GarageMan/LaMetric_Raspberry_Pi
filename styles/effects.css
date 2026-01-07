@@ -1,0 +1,21 @@
+
+:root {
+  --blink-white:  #FFFFFF;
+  --blink-orange: #FFA500;
+  --blink-blue:   #4DA3FF; /* Blau für <= 0 °C */
+  --blink-black:  #000000; /* Schwarz für Wechsel */
+}
+
+/* Orange-Blinken */
+@keyframes blink-orange {
+  0%,49%   { color: var(--blink-white); }
+  50%,100% { color: var(--blink-orange); }
+}
+.blink-orange { animation: blink-orange 1s step-start infinite; }
+
+/* Blau/Schwarz-Blinken für Temperatur <= 0 °C */
+@keyframes blink-blue {
+  0%,49%   { color: var(--blink-black); }
+  50%,100% { color: var(--blink-blue); }
+}
+.blink-blue { animation: blink-blue 1s step-start infinite; }

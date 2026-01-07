@@ -1,0 +1,24 @@
+/Lametric Dashboard
+│
+├─ index.html
+├─ assets/
+│  ├─ fonts/lametric.ttf
+│  └─ bilder/ ... (GIFs/Icons)
+│
+├─ styles/
+│  ├─ base.css            # Grundlayout, Farben, Grid
+│  ├─ dashboard.css       # Komponentenspezifisch (#clock, #date, #weatherText etc.)
+│  └─ effects.css         # Blink-Animationen & motion-reduce
+│
+├─ js/
+│  ├─ main.js             # Bootstrap/Init, Timings/Intervals
+│  ├─ config.js           # Konfiguration (Koordinaten, Konstanten)
+│  ├─ time.js             # Uhrzeit/Datum
+│  ├─ moon.js             # Mondphase-Berechnung + Bildwahl
+│  ├─ weather/
+│  │  ├─ api.js           # Open‑Meteo Fetches
+│  │  ├─ icons.js         # Icon-Mapping Tag/Nacht
+│  │  └─ display.js       # Rotationslogik & Formatierung (Temp, Druck, Wind, Feiertag, Geburtstag)
+│  ├─ birthdays.js        # Geburtstagsliste + Lookup
+│  ├─ holidays.js         # Feiertage NRW/Karneval
+│  └─ fog-override.js     # Nebel-Erkennung & Icon-Override
